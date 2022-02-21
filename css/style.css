@@ -294,3 +294,49 @@ html::-webkit-scrollbar-thumb{
   color:var(--light-color);
   line-height: 2;
 }
+
+@media (max-width:1200px) {
+  
+  .container{
+    flex-flow: column;
+    padding:20px;
+    justify-content: center;
+  }
+
+  .container .profile{
+    position: static;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding:20px;
+    border-right: none;
+    margin:0 auto;
+    margin-bottom: 15px;
+  }
+
+  .container .information{
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding:20px;
+  }
+
+}
+
+@media (max-width:450px){
+
+  .container .profile{
+    width: 100%;
+  }
+
+  .container .profile .btn{
+    width: 100%;
+  }
+
+  .container .information .about p{
+    font-size: 12px;
+  }
+
+  .container .information .experience .box-container .box p{
+    font-size: 12px;
+  }
+
+}
